@@ -14,13 +14,6 @@ describe("CardValue", () => {
     })
   })
 
-  describe("value", () => {
-    it("should have a value that matches the initial weight of the card value", () => {
-      const cardValue = CardValue.create(2)
-      expect(cardValue.value()).toEqual(2)
-    })
-  })
-
   describe("for display", () => {
     it("should convert the weight to the correct display for A", () => {
       const cardValue = CardValue.create(14)

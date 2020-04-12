@@ -11,10 +11,6 @@ class CardValue {
     return this.valid
   }
 
-  value(): number {
-    return this.weight
-  }
-
   forDisplay(): string {
     switch (this.weight) {
       case 14:

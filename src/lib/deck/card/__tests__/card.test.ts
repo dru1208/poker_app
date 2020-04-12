@@ -1,5 +1,5 @@
 import Suit from "../suit"
-import Card from "../card"
+import Card from "../index"
 import CardValue from "../cardValue"
 
 describe("Card", () => {

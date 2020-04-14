@@ -3,15 +3,19 @@ import CardValue from "./cardValue"
 
 class Card {
   suit: Suit;
-  value: CardValue
+  cardValue: CardValue
 
-  constructor(suit: Suit, value: CardValue) {
+  constructor(suit: Suit, cardValue: CardValue) {
     this.suit = suit
-    this.value = value
+    this.cardValue = cardValue
+  }
+
+  value(): number {
+    return this.cardValue.weight
   }
 
   isValid(): boolean {
-    return this.value.isValid()
+    return this.cardValue.isValid()
   }
 
   static create(suit: Suit, weight: number) {

@@ -9,7 +9,7 @@ describe("Card", () => {
     const card = new Card(suit, value)
 
     expect(card.suit).toEqual(Suit.Diamond)
-    expect(card.value.weight).toEqual(2)
+    expect(card.value()).toEqual(2)
   })
 
   it("should be valid if the value is valid", () => {

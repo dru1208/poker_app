@@ -13,6 +13,11 @@ class Card {
   isValid(): boolean {
     return this.value.isValid()
   }
+
+  static create(suit: Suit, weight: number) {
+    const cardValue = CardValue.create(weight)
+    return new Card(suit, cardValue)
+  }
 }
 
 export default Card

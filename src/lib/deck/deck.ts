@@ -1,7 +1,5 @@
 import _ from "underscore"
-import Card from "../card"
-import CardValue from "../card/cardValue"
-import Suit from "../card/suit"
+import { Card, CardValue, Suit } from "../card"
 
 class Deck {
   cards: Card[]

@@ -1,6 +1,6 @@
 import _ from "underscore"
-import Deck from "../deck"
-import Suit from "../../card/suit"
+import { Deck } from "../index"
+import { Suit } from "../../card"
 
 describe("Deck", () => {
   describe("size", () => {

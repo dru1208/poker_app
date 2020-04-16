@@ -1,4 +1,4 @@
-import CardValue from "../cardValue"
+import { CardValue } from "../index"
 
 describe("CardValue", () => {
   describe("create", () => {

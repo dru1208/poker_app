@@ -1,6 +1,4 @@
-import Suit from "../suit"
-import Card from "../index"
-import CardValue from "../cardValue"
+import { Card, CardValue, Suit } from "../index"
 
 describe("Card", () => {
   it("should have a suit and a card value", () => {

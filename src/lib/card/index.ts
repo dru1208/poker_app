@@ -1,27 +1,5 @@
-import Suit from "./suit"
+import Card from "./card"
 import CardValue from "./cardValue"
+import Suit from "./suit"
 
-class Card {
-  suit: Suit;
-  cardValue: CardValue
-
-  constructor(suit: Suit, cardValue: CardValue) {
-    this.suit = suit
-    this.cardValue = cardValue
-  }
-
-  value(): number {
-    return this.cardValue.weight
-  }
-
-  isValid(): boolean {
-    return this.cardValue.isValid()
-  }
-
-  static create(suit: Suit, weight: number) {
-    const cardValue = CardValue.create(weight)
-    return new Card(suit, cardValue)
-  }
-}
-
-export default Card
+export { Card, CardValue, Suit }

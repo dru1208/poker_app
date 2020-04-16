@@ -10,6 +10,17 @@ class Deck {
     this.cards = cards
   }
 
+  size(): number {
+    return this.cards.length
+  }
+
+  deal(): Card {
+    const cards = [...this.cards]
+    const dealtCard = cards.shift()
+    this.cards = cards
+    return dealtCard
+  }
+
   static create(): Deck {
     const cards = Deck.generateCards()
     return new Deck(cards)
